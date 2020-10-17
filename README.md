@@ -1,7 +1,7 @@
-# Make_your_own_coin_usind-constructor_desctructor
+# Make_your_own_coin_usind-constructor_desctructor_encapsulation
            import random  
            class Pound:     
-           def __init__(self, rare=False):       
+           def __init__(self, rare=False):     #constructor  
            self.rare = rare       
            if self.rare:          
            self.value = 1.25      
@@ -12,7 +12,7 @@
            self.diameter = 2.25 #mm      
            self.thickness = 3.15 # mm      
            self.heads = True     
-           def __del__(self):       
+           def __del__(self):        #destructor
            print("Coin Spent!")     
            def rust(self):              
            self.colour = "greenish"     
